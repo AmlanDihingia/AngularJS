@@ -17,7 +17,7 @@
     <div class="content">
       <div ng-controller="NinjaController">
          <button ng-click="order= 'name'">Order by Name</button>
-      <button ng-click="order= 'belt'">Order by Name</button>
+      <button ng-click="order= 'belt'">Order by Belt</button>
     <input type="text" placeholder="search for a ninja" ng-model="search"/>
   <ul>
       <li ng-repeat="ninja in ninjas | orderBy:order | filter: search ">
